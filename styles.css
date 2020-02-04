@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: white;
+  -webkit-font-smoothing: antialiased; /* Fonte mais legível no Chrome */
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.title {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.shell {
+  width: 300px;
+  height: 340px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0 10px 8px -9px black;
+  margin-bottom: 5%;
+}
+
+.display {
+  height: 60px;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.display input {
+  height: 100%;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  font-size: 18px;
+  background-color: #f9f9f9;
+  color: #5c5b5b;
+  font-weight: 600;
+}
+button {
+  font-weight: 300;
+  border: 0;
+  border-radius: 5px;
+  height: 28px;
+  cursor: pointer;
+}
+button:hover {
+  transition: all 0.3s;
+}
+#buttons {
+  margin: 0 auto;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.numbers {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+}
+
+.actions {
+  width: 25%;
+  margin: 0 auto 0 10px;
+}
+
+.actions button {
+  height: 32px;
+  width: 90%;
+  margin-bottom: 5px;
+}
