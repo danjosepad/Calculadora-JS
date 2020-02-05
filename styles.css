@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -16,14 +18,14 @@ body {
 
 body {
   background: white;
-  -webkit-font-smoothing: antialiased; /* Fonte mais legível no Chrome */
+  -webkit-font-smoothing: antialiased;
 }
 
 body,
 input,
 textarea,
 button {
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .content {
@@ -36,23 +38,58 @@ button {
 .title {
   margin-top: 5%;
   margin-bottom: 5%;
+  overflow: hidden;
+  border-right: 0.15em solid goldenrod;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  -webkit-animation: typing 2.75s steps(40, end),
+    blink-caret 1s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: goldenrod;
+  }
 }
 
 .shell {
   width: 300px;
   height: 340px;
-  background-color: #f6f6f6;
+  background-color: #f2ecff;
   border-radius: 20px;
   box-shadow: 0 10px 8px -9px black;
   margin-bottom: 5%;
+  -webkit-animation: fadein 2.5s;
 }
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .display {
   height: 60px;
   width: 80%;
   margin: 10px auto;
   border-radius: 10px;
   background-color: #f9f9f9;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.08);
 }
 
 .display input {
@@ -72,6 +109,7 @@ button {
   border-radius: 5px;
   height: 28px;
   cursor: pointer;
+  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.1);
 }
 button:hover {
   transition: all 0.3s;
@@ -88,7 +126,6 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
 }
 
 .actions {
@@ -100,4 +137,20 @@ button:hover {
   height: 32px;
   width: 90%;
   margin-bottom: 5px;
+}
+
+a {
+  color: goldenrod;
+  text-decoration: none;
+  font-weight: 600;
+  -webkit-animation: fadein 4.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
