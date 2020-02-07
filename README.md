@@ -2,5 +2,9 @@
 
 # :ledger: Calculadora JS
 
-Este é um exemplo de uma calculadora utilizando HTML e Javascript.
+![](giphy.gif)
 
+
+Calculadora utilizando JavaScript e HTML!
+
+Live demo disponível em breve.
